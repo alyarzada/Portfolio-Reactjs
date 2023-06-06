@@ -1,0 +1,263 @@
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* applies */
+
+.clipPath {
+  clip-path: polygon(
+    evenodd,
+    37.5% 36%,
+    62.5% 36%,
+    75% 11%,
+    85.71% 36%,
+    75% 86%,
+    62.5% 86%,
+    62.5% 60.07%,
+    75% 50.57%,
+    57.92% 50.57%,
+    62.5% 60.07%,
+    62.5% 86%,
+    37.5% 86%,
+    37.5% 60.07%,
+    25% 50.57%,
+    42.08% 50.57%,
+    37.5% 60.07%,
+    37.5% 86%,
+    25% 86%,
+    14.29% 36%,
+    25.9% 11%
+  );
+  background-color: #47eb68;
+}
+
+.row-letter {
+  white-space: nowrap;
+}
+
+.custom-px {
+  @apply px-100px;
+}
+
+.custom-py {
+  @apply sm:py-16 py-6;
+}
+
+.custom-p {
+  @apply sm:px-16 px-6 sm:py-12 py-4;
+}
+
+.custom-mx {
+  @apply sm:mx-16 mx-6;
+}
+
+.custom-my {
+  @apply sm:my-16 my-6;
+}
+
+.custom-flex-center {
+  @apply flex justify-center items-center;
+}
+
+.custom-flex-start {
+  @apply flex justify-center items-start;
+}
+
+.hello {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  box-shadow: inset -10px -10px 10px 20px #00040f;
+}
+
+.clip-photo {
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+
+.triangle-clip {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  box-shadow: inset 0px 0px 40px 10px rgba(167, 188, 9, 0.5);
+}
+
+.text-gradient {
+  background-image: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-blue-gradient {
+  background-image: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+}
+
+.border-blue-gradient {
+  border-color: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+}
+
+.bg-black-gradient {
+  background-image: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background-image: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background-image: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+.bg-discount-gradient {
+  background-image: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.blue__gradient {
+  background-image: linear-gradient(
+    180deg,
+    rgba(188, 165, 255, 0) 0%,
+    #214d76 100%
+  );
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background-image: linear-gradient(180deg, #f4c4f3a9 0%, #fc67fa 100%);
+  filter: blur(200px);
+}
+
+.white__gradient {
+  background-image: linear-gradient(180deg, #ffffff74 0%, #e0e0e0 100%);
+  filter: blur(150px);
+}
+
+/* swiper */
+
+.swiper {
+  overflow: visible;
+}
+.swiper-pagination-bullet {
+  background-color: #33bbcf;
+}
+
+.swiper-pagination {
+  bottom: -24px !important;
+}
