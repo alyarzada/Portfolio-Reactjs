@@ -38,7 +38,7 @@ const EachProject = ({ item }: { item: DataTypes }) => {
           <div className="w-full mt-5 absolute bottom-3 right-3 mt-0">
             <div className="flex justify-end gap-x-2 w-full">
               <Button className="bg-blue-gradient border-none font-medium">
-                <a target="_blank" href={item.link}>
+                <a target="_blank" href={item.srcLink}>
                   Source Code
                 </a>
               </Button>

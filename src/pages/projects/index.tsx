@@ -2,7 +2,6 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EachProject from "./components/EachProject";
 import { projectsData } from "../../data/projectsData";
-import { DataTypes } from "../../data/projectsData";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 // Import Swiper styles
@@ -25,7 +24,7 @@ const Projects = () => {
         slidesPerView={matches ? 2 : 1}
         pagination={{ clickable: true }}
       >
-        {projectsData.map((item: DataTypes) => {
+        {projectsData.map((item) => {
           return (
             <SwiperSlide>
               <EachProject key={item.id} item={item} />
