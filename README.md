@@ -2,7 +2,7 @@
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/alyarzada/react-advanced-dashboard
+git clone https://github.com/alyarzada/portfolio-react
 ```
 
 2. Install dependencies
